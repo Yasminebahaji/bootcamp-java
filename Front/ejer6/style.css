@@ -1,0 +1,20 @@
+*{
+    background-color: antiquewhite;
+}
+
+.box{
+    padding: 5px;
+    margin: 10px;
+    border: solid;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: lightblue;
+}
+
+.box-2{
+    text-align: center;
+}
+.box-3{
+    text-align: right;
+}
