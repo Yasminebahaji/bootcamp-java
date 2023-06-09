@@ -1,0 +1,86 @@
+
+h3{
+    margin: 0%;
+    margin-inline-start: 10px;
+}
+.section01{
+    width: 8vw;
+    display: grid;
+    align-content: center ;
+    justify-content: center;
+}
+.section-1{
+    background-color:midnightblue; 
+    height: 5vh;
+}
+.section-2{
+    background-color:coral; 
+    height: 5vh;
+}
+.section-3{
+    background-color:cornflowerblue; 
+    height: 8vh;
+}
+.section-4{
+    background-color:cadetblue;
+    height: 8vh;
+}
+.section-5{
+    background-color:bisque;
+    height: 7vh;
+}
+.section-6{
+    background-color:lightgreen ;
+    height: 7vh;
+}
+.section-7{
+    background-color: aquamarine;
+    height: 7vh;
+
+}
+
+.section02{
+    display: grid;
+    align-content : center ;
+    justify-content: center;
+
+}
+.section-8{
+    background-color:midnightblue;
+    width: 16vw; 
+    height: 5vh;
+}
+.section-9{
+    background-color:cornflowerblue; 
+    width: 16vw; 
+    height: 5vh;
+}
+.section-10{
+    background-color:coral;
+    width: 4vw; 
+    height: 40vh; 
+   align-self: stretch;
+}
+.section-11{
+    background-color:cadetblue;
+    width: 12vw; 
+    height: 8vh;
+    align-self: start;
+}
+.section-12{
+    background-color:bisque;
+    width: 16vw; 
+    height: 7vh;
+}
+.section-13{
+    background-color:lightgreen ;
+    width: 16vw; 
+    height: 4vh;
+}
+.section-14{
+    background-color: aquamarine;
+    width: 16vw; 
+    height: 3vh;
+    grid-area:auto;
+}
+
