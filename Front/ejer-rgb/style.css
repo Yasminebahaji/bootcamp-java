@@ -9,7 +9,7 @@
 }
 
 .circle-2{
-  background-color: yellowgreen;
+  background-color:chartreuse;
 }
 
 .circle-3 , .circle-02{
@@ -24,7 +24,12 @@
 .container div{
   display: inline-block;
 }
-
+.circle-003{
+  background-color: aquamarine;
+}
+.circle-05{
+  background-color: yellow;
+}
 /*div{
     width: 80px;
     height: 80px;
