@@ -10,15 +10,29 @@
     }
   </style>
 </head>
+<body>
+  <div>[<span id="root"></span>]</div>
+<fieldset style="background-color: aquamarine;">
+  <legend>Add item</legend>
+  <button id="pushBtn">push</button>
+  <button id="unshiftBtn">unshift</button>
+  <button id="insertAtBtn">insert at</button>
+  <input type="number" id="addPositionInput" name="addPositionInput" value="0" min="0">
+</fieldset>
 
 
-  <button id="toggleButton">push</button>
-  <button id="toggleButton">unshift</button>
-  <button id="toggleButton">insert at</button>
-  <div id="root"></div>
+<fieldset style="background-color: darksalmon;">
+  <legend>Remove item</legend>
+  <button id="popBtn">pop</button>
+  <button id="shiftBtn">shift</button>
+  <button id="removeAtBtn">remove at</button>
+  <input type="number" id="removePositionInput" name="removePositionInput" value="0" min="0">
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="main2.js"></script>
+</fieldset>
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script src="main2.js"></script>
 </body>
 
 </html>

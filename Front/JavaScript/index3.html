@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Juego de Piedra, Papel, Tijera</title>
+  <style>
+    .icon {
+      font-size: 50px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Juego de Piedra, Papel, Tijera</h1>
+
+  <p>Elige una opción:</p>
+  <div>
+    <span class="icon" id="rock">&#x1F5FF;</span>
+    <span class="icon" id="paper">&#x1F4C3;</span>
+    <span class="icon" id="scissors">&#x2702;</span>
+  </div>
+
+  <script>
+    // Función para generar la elección aleatoria de la computadora
+    function getRandomChoice() {
+      var choices = ['rock', 'paper', 'scissors'];
+      var randomIndex = Math.floor(Math.random() * choices.length);
+      return choices[randomIndex];
+    }
+
+    // Función para obtener la elección del jugador y jugar el juego
+    function playGame(playerChoice) {
+      var computerChoice = getRandomChoice();
+
+      // Comprobamos quién gana
+      var result;
+      if (playerChoice === computerChoice) {
+        result = 'Empate';
+      } else if (
+        (playerChoice === 'rock' && computerChoice === 'scissors') ||
+        (playerChoice === 'paper' && computerChoice === 'rock') ||
+        (playerChoice === 'scissors' && computerChoice === 'paper')
+      ) {
+        result = '¡Ganaste!';
+      } else {
+        result = '¡Perdiste!';
+      }
+
+      // Mostramos las elecciones y el resultado en la página
+      document.write('<h2>Tu elección: ' + playerChoice + '</h2>');
+      document.write('<h2>Elección de la computadora: ' + computerChoice + '</h2>');
+      document.write('<h2>Resultado: ' + result + '</h2>');
+
+      // Deshabilitamos los iconos después de jugar
+      var icons = document.getElementsByClassName('icon');
+      for (var i = 0; i < icons.length; i++) {
+        icons[i].style.pointerEvents = 'none';
+      }
+    }
+
+    // Manejadores de eventos para los iconos
+    var rockIcon = document.getElementById('rock');
+    rockIcon.addEventListener('click', function() {
+      playGame('rock');
+    });
+
+    var paperIcon = document.getElementById('paper');
+    paperIcon.addEventListener('click', function() {
+      playGame('paper');
+    });
+
+    var scissorsIcon = document.getElementById('scissors');
+    scissorsIcon.addEventListener('click', function() {
+      playGame('scissors');
+    });
+  </script>
+</body>
+</html>
